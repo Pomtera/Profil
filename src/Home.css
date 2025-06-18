@@ -1,0 +1,648 @@
+:root {
+  --orange: #ff5722;
+  --dark: #121212;
+  --white: #ffffff;
+  --gray: #cccccc;
+}
+   
+
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #FFA500;
+  
+}
+
+.split-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Panel - Orange */
+.left-panel {
+  flex: 1;
+  background-color: var(--orange);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.left-content {
+  text-align: center;
+  animation: fadeSlide 1s ease forwards;
+}
+
+.left-content h1 {
+  font-size: 4rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.left-content p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Right Panel - Black */
+.right-panel {
+  flex: 1;
+  background-color: var(--dark);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.logo {
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+  position: relative; /* ✅ เพิ่มบรรทัดนี้ */
+  left: -500px;
+}
+
+.navbar {
+  float: right; /* ใช้ float เพื่อให้อยู่ด้านขวา */
+  width: 60%;
+  padding: 1.5rem 2rem;
+  background-color: #111;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: fixed
+  
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 2.9rem;
+}
+
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: var(--orange);
+  color: var(--dark);
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.right-content h2 {
+  font-size: 2.5rem;
+  color: var(--white);
+  max-width: 500px;
+  animation: fadeSlide 1s ease forwards;
+}
+
+/* Animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .split-container {
+    flex-direction: column;
+  }
+  .left-panel, .right-panel {
+    flex: none;
+    height: 50vh;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+}
+.future-image {
+  width: 600px;
+  height: auto;
+  border-radius: 500px; /* ปรับความโค้งตามต้องการ */
+  animation: fadeSlide 1s ease forwards;
+}
+
+.typewriter-line1 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  width: 0;
+  font-size: 3rem;
+  animation: typing1 1.5s steps(22) forwards, blink 0.75s;
+  color: #000000
+}
+
+.typewriter-line2 {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  width: 0;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  margin-left: 15rem; /* หรือใช้ padding-left ก็ได้ */
+  animation: typing2 1.5s steps(22) forwards, blink 0.75s step-end infinite;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  color: #000000
+}
+
+/* Animation */
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 22ch } /* Welcome to Portfolio */
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 27ch } /*    By Kriskorn Panyaporn */
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.download-btn {
+  position: absolute;
+  top: 20px;
+  right: -300px;
+  background-color: var(--orange);
+  color: var(--dark);
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #e64a19;
+  color: white;
+}
+
+.read-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: var(--dark);
+  color: var(--orange);
+  border: 2px solid var(--dark);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  right: 1000px;
+}
+
+.read-btn:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  border-color: var(--orange);
+  border: 2px solid var(--dark);
+}
+
+.more-section {
+  background-color: #000000;
+  color: #333;
+  padding: 4rem 2rem;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #000; /* พื้นหลังสีดำ */
+  color: #fff;
+}
+
+.section-inner {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+}
+
+.section-inner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-inner p, .section-inner ul {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+.about-me-image {
+  display: block;
+  margin: 0;
+}
+
+
+.about-me-content {
+  position: relative; /* ต้องมี เพื่อให้รูปวางอิง container นี้ */
+}
+
+.about-me-image {
+  position: relative; /* หรือ absolute ถ้าอยากจัดแบบอิสระ */
+  left: -550px;
+  width: 725px;
+  height: auto;
+}
+
+/* Animation สำหรับรูปเมื่อเลื่อนมาถึง */
+.about-me-image {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about-me-image.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.blog-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.blog-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.blog-card a {
+  margin-top: 1rem;
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #FFA500;
+  
+}
+
+/* กล่องหลัก */
+.info-box,
+.text-block-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 380px;
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid #FFA500;
+  border-radius: 25px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease;
+  text-align: center;
+  overflow: hidden; /* ให้ภาพไม่ล้นออก */
+  
+}
+
+.info-box:hover,
+.text-block-right:hover {
+  transform: translateY(-52%) scale(1.02);
+}
+
+/* ขยับมาทางขวา */
+.info-box {
+  left: 20%;
+}
+
+.text-block-right {
+  right: -25%;
+}
+
+.box-image {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.box-image.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ข้อความในกล่อง */
+.info-box h3,
+.text-block-right h2 {
+  margin: 16px 0 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFA500;
+}
+
+.info-box p,
+.text-block-right p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 0 10px; 
+}
+
+/* ปุ่ม */
+.orange-btn {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #ff6600;
+  border: 2px solid #ffa500;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px #000000;
+  transition: all 0.3s ease;
+}
+
+.contact-section-orange {
+  background-color: #ff6600;
+  padding: 80px 0;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contact-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.contact-text {
+  position: absolute;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+.left-text {
+  left: -5%;
+  top: 45%; 
+  bottom: 20%; 
+}
+
+.right-text {
+  right: -5%;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.read-btn-black {
+  background-color: transparent;
+  border: 4px solid black;
+  padding: 10px 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-decoration: none;
+  animation: fadeSlide 1s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
+   display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #212121;
+  color: #ff7300;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: background-color 2s ease, transform 2s ease;
+  transform: translateY(-10px);
+  
+}
+
+.read-btn-black:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ส่วนหลักของ Contact Section */
+.contact-section-orange {
+  background-color: #ff6600; /* สีส้มสดใส */
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-text h2, .right-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border: 5px solid #000000;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-text:hover h2 {
+  transform: translateY(-10px);
+  opacity: 0.9;
+}
+
+/* รูปภาพตรงกลาง */
+.contact-image-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.contact-img:hover {
+  transform: scale(1.05);
+}
+          
+
+.footer {
+  background: linear-gradient(to right, #1c1c1c, #2b2b2b);
+  color: #ffbb00;
+  padding: 2rem 1rem 1rem;
+  margin-top: 3rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand h3 {
+  font-size: 1.4rem;
+  color: #ff9800;
+}
+
+.footer-brand p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  font-size: 1.1rem;
+  color: #ff9800;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 0.4rem 0;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #ffa726;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.custom-navbar {
+  background-color: transparent !important;
+  box-shadow: none;
+  padding: 0.8rem 0;  /* สูงขึ้นเล็กน้อย */
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #FFA500 !important;
+  transform: translateY(-2px);
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.nav-menu-right {
+  margin-right: 5rem;  /* เพิ่มขยับไปทางขวา */
+}
+
+@media (min-width: 9px) {
+  .nav-menu-right {
+    margin-right: -45rem; /* เพิ่มอีกสำหรับจอใหญ่ */
+  }
+}
+
+
+
+
+
+

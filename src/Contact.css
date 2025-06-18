@@ -1,0 +1,161 @@
+.BGCT {
+  background-color: black;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.contact-form-container {
+  width: 400px;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  border: 3px solid #ff900f; /* ✅ ขอบสีเขียว */
+  border-radius: 10px;
+  float: right; /* ✅ จัดไปฝั่งขวา */
+  margin-right: 40px;
+}
+
+.contact-form-container .form-label {
+  color: orange;
+  font-weight: bold;
+}
+
+.form-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.contact-form-container button {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-weight: bold;
+  float: right;
+}
+
+.status-message {
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.status-message {
+     position: absolute;
+  top: 510px; 
+}
+
+.contact-form-container {
+  position: absolute; /* หรือ relative ตามต้องการ */
+  top: 100px;   /* ปรับตามต้องการ */
+  left: 1190px;  /* ปรับตามต้องการ */
+  width: 400px; /* ขนาดของฟอร์ม */
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.MAP{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
+.Insta img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+
+
+
+.Insta{
+    position: absolute;
+    top: 650px;
+    left: 250px;
+    width: 150%;
+}
+
+.Facebook img {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.Facebook{
+    position: absolute;
+    top: 650px;
+    left: 550px;
+
+}
+
+.Line img {
+  width: 100px;
+  height: 100px;
+  margin: 0 8px;
+  transition: transform 0.3s;
+}
+
+.Line{
+    position: absolute;
+    top: 650px;
+    left: 850px;
+}
+
+.Phone img {
+  width: 100px;
+  height: 100px;
+  margin: 0 8px;
+  transition: transform 0.3s;
+}
+
+.Phone{
+    position: absolute;
+    top: 650px;
+    left: 1150px;
+   
+}
+
+.Ph{
+    position: absolute;
+    top: 15px;
+    left: 140px;
+    font-size: 40px;
+}
+
+.LI{
+    position: absolute;
+    top: 100px;
+    left: -30px;
+    font-size: 40px;
+}
+
+.Face{
+    position: absolute;
+    top: 100px;
+    left: -10px;
+    font-size: 30px;
+    float: center; 
+}
+
+.IN {
+ position: absolute;
+    top: 15px;
+    left: -150px;
+    font-size: 40px;
+    float: center; 
+}

@@ -1,0 +1,996 @@
+.custom-navbar {
+  background-color: transparent !important;
+  box-shadow: none;
+  padding: 0.8rem 0;
+  
+} 
+      
+.custom-navbar {
+  background-image: url('/path-to-your-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-content {
+  margin-left: 5%;      /* ขยับทั้ง LOGO + เมนู ไปทางขวา */
+}
+
+@media (min-width: 992px) {
+  .navbar-content {
+    margin-left: 8%;    /* จอใหญ่ → ขยับอีก */
+  }
+}                                                                        /*------------------------เมนู----------------------------**/
+
+.custom-navbar .nav-link {
+  color: #ffffff !important;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ff9800 !important;
+  transform: translateY(5px);
+}
+
+.navbar-brand {
+  color: rgb(255, 255, 255) !important;
+}
+
+.navbar-brand:hover {
+  color: #ff6600 !important;
+}
+/*-----------------------------------------------------------------------------*/
+.centered-image-container {
+  display: flex;
+  justify-content: flex-start; /* ขยับไปทางซ้าย */
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  padding: 80px 200px; /* padding บนและซ้าย */
+  
+}
+
+.centered-logo {
+  max-width: 600px; /* เพิ่มขนาดตามต้องการ */
+  width: 100%;       /* ทำให้ responsive */                     /*------------------------------------รูป------------------------------------------**/
+  height: auto;
+  border-radius: 8px; /* เพิ่มความสวยงาม */
+  border: 7px solid #ffffff;
+  border-radius: 50px;
+}
+      
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  padding: 80px;
+  color: rgb(255, 255, 255);
+}
+
+/*---------------------------------------------------------------------------------**/
+.text-container {
+  position: absolute;
+  top: 200px;    /* ขยับจากบนลงมา */
+  right: 560px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 80px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 700; /* ทำให้หนา */
+}
+                                             
+.text-containerr {
+  position: absolute;
+  top: 280px;    /* ขยับจากบนลงมา */
+  right: 250px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 80px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 700; /* ทำให้หนา */
+}
+
+.text-containerrr {
+  position: absolute;
+  top: 400px;    /* ขยับจากบนลงมา */
+  right: 80px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 700; /* ทำให้หนา */
+}
+
+.text-containerrrr {
+  position: absolute;
+  top: 440px;    /* ขยับจากบนลงมา */
+  right: 130px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 700; /* ทำให้หนา */
+}
+                                                                         /*------------------------ฟ้อน----------------------------**/
+.text-containerrrrr {
+  position: absolute;
+  top: 480px;    /* ขยับจากบนลงมา */
+  right: 150px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 700; /* ทำให้หนา */
+}
+
+.text-containerrrrrrr {
+  position: absolute;
+  top: 520px;    /* ขยับจากบนลงมา */
+  right: 660px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 700; /* ทำให้หนา */
+}
+/*---------------------------------------------------------------------------------**/
+
+.PYPG {
+  position: absolute;
+  top: 98%;                /* จุดอ้างอิงกลาง */
+  left: 50%;
+  transform: translate(-50%, -50%);  /* ย้ายให้อยู่ตรงกลางจริง */
+  width: 10%;              /* หรือจะใช้ max-width: 600px ก็ได้ */
+  height: auto;
+  border-radius: 12px;
+}
+
+.KTCMBG {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  padding: 80px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to right, #ff9800 50%, #000000 50%);
+}
+
+
+.KTCM {
+  position: relative;
+  width: 30%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.KTCMPG {
+  position: absolute;
+  top: 45%;                /* จุดอ้างอิงกลาง */
+  left: 85%;
+  transform: translate(-50%, -50%);  /* ย้ายให้อยู่ตรงกลางจริง */
+  width: 50%;              /* หรือจะใช้ max-width: 600px ก็ได้ */
+  height: auto;
+  border-radius: 12px;
+}
+
+.text-KTCM {
+position: absolute;
+  top: 1280px;    /* ขยับจากบนลงมา */
+  right: 1080px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 750; /* ทำให้หนา */
+}
+
+.text-KTCMs {
+position: absolute;
+  top: 1315px;    /* ขยับจากบนลงมา */
+  right: 1080px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  
+}
+
+.text-KTCMss {
+position: absolute;
+  top: 1350px;    /* ขยับจากบนลงมา */
+  right: 1080px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 750;
+}
+
+.RAMPG {
+  position: absolute;
+  top: 120%;                /* จุดอ้างอิงกลาง */
+  left: 75%;
+  transform: translate(-50%, -50%);  /* ย้ายให้อยู่ตรงกลางจริง */
+  width: 10%;              /* หรือจะใช้ max-width: 600px ก็ได้ */
+  height: auto;
+  border-radius: 12px;
+}
+
+.text-RAM{
+  position: absolute;
+  top: 1280px;    /* ขยับจากบนลงมา */
+  right: 310px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 700; /* ทำให้หนา */
+}
+
+.text-RAMs{
+  position: absolute;
+  top: 1315px;    /* ขยับจากบนลงมา */
+  right: 315px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+}
+
+.text-RAMss{
+  position: absolute;
+  top: 1350px;    /* ขยับจากบนลงมา */
+  right: 315px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+}
+
+.text-PY{
+  position: absolute;
+  top: 1000px;    /* ขยับจากบนลงมา */
+  right: 950px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 700; /* ทำให้หนา */
+}
+
+.text-PYY{
+  position: absolute;
+  top: 1000px;    /* ขยับจากบนลงมา */
+  right: 850px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 700; /* ทำให้หนา */
+}
+/**---------------------------------------------------------------------------------------------------/*/
+
+.MYSKILL {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  padding: 80px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to right, #ff9800 33%, #000000 33%);
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.green-divider {
+  width: 100%;
+  height: 50px;
+  background-color: #ff6600;
+  margin-top: -30px; 
+   background: linear-gradient(to right,
+    #ff6600 0%, 
+    #ff6600 25%,
+    #ff6600 25%, 
+    #ff6600 50%, 
+    #ff6600 50%, 
+    #ff6600 75%, 
+    #ff6600 75%, 
+    #ffffff 100%
+  );
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.MYSKILL {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  padding: 80px;
+   background: linear-gradient(to right,
+    #ff6600 0%, 
+    #ff9800 25%,
+    #ff6600 25%, 
+    #ff6600 50%, 
+    #0400ff 50%, 
+    #0400ff 75%, 
+    #000000 75%, 
+    #000000 100%
+  );
+}
+
+.MYSKILLs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  padding: 80px;
+   background: linear-gradient(to right,
+    #ffffff 0%, 
+    #0400ff 25%,
+    #000000 25%, 
+    #000000 50%, 
+    #ff9800 50%, 
+    #ff9800 75%, 
+    #ff6600 75%, 
+    #ffffff 100%
+  );
+}
+
+.MSKPG {
+  position: absolute;
+  top: 197%;                /* จุดอ้างอิงกลาง */
+  left: 50%;
+  transform: translate(-50%, -50%);  /* ย้ายให้อยู่ตรงกลางจริง */
+  width: 6%;              /* หรือจะใช้ max-width: 600px ก็ได้ */
+  height: auto;
+  border-radius: 12px;
+}
+
+.text-MS {
+position: absolute;
+  top: 1940px;    /* ขยับจากบนลงมา */
+  right: 950px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 750; /* ทำให้หนา */
+}
+
+
+.text-MSs {
+position: absolute;
+  top: 1940px;    /* ขยับจากบนลงมา */
+  right: 862px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 750; /* ทำให้หนา */
+}
+
+.text-aruino {
+position: absolute;
+  top: 1500px;    /* ขยับจากบนลงมา */
+  right: 862px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  text-align: right;
+  z-index: 10;   /* ให้อยู่บน */
+  font-weight: 750; /* ทำให้หนา */
+}
+
+.ArduinoPG {
+  position: absolute;
+  top: 170%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  width: 8%;
+  height: auto;
+}
+
+.arduino-title {
+  position: absolute;
+  top: 182%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+/* ✅ กราฟยาวขึ้น */
+.arduino-progress-container {
+  position: absolute;
+  top: 186%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.arduino-progress-bar {
+  height: 100%;
+  width: 85%;
+  background-color: orange;
+  border-radius: 7px;
+}
+
+/* ✅ ตัวเลขเปอร์เซ็นต์ — ใต้กราฟ */
+.ard {
+  position: absolute;
+  top: 190%;        /* ← ใต้ progress bar */
+  left: 12%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.PythonPG {
+  position: absolute;
+  top: 172%;                /* จุดอ้างอิงกลาง */
+  left: 38%;
+  transform: translate(-50%, -50%);  /* ย้ายให้อยู่ตรงกลางจริง */
+  width: 8%;              /* หรือจะใช้ max-width: 600px ก็ได้ */
+  height: auto;
+}
+
+.python-title {
+  position: absolute;
+  top: 182%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.python-progress-container {
+  position: absolute;
+  top: 186%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  width: 180px;       /* ← ขยายจาก 120px → 180px */
+  height: 14px;  
+  background-color: #ffffff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.python-progress-bar {
+  height: 100%;
+  width: 70%;        /* ✅ เปอร์เซ็นต์ Python */
+  background-color: orange;
+  border-radius: 7px;
+}
+
+.python-percent-below {
+  position: absolute;
+  top: 190%;       
+  left: 37%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+  }
+
+.HTMLPG {
+  position: absolute;
+  top: 170%;                /* จุดอ้างอิงกลาง */
+  left: 63%;
+  transform: translate(-50%, -50%);  /* ย้ายให้อยู่ตรงกลางจริง */
+  width: 8%;              /* หรือจะใช้ max-width: 600px ก็ได้ */
+  height: auto;
+}
+
+
+.html-title {
+  position: absolute;
+  top: 182%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.html-progress-container {
+  position: absolute;
+  top: 186%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.html-progress-bar {
+  height: 100%;
+  width: 75%;       /* ✅ HTML 80% */
+  background-color: orange;
+  border-radius: 7px;
+}
+
+.html-percent-below {
+  position: absolute;
+  top: 190%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.JVSPG {
+  position: absolute;
+  top: 172%;                /* จุดอ้างอิงกลาง */
+  left: 89%;
+  transform: translate(-50%, -50%);  /* ย้ายให้อยู่ตรงกลางจริง */
+  width: 8%;              /* หรือจะใช้ max-width: 600px ก็ได้ */
+  height: auto;
+}
+.jvs-title {
+  position: absolute;
+  top: 182%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.jvs-progress-container {
+  position: absolute;
+  top: 186%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.jvs-progress-bar {
+  height: 100%;
+  width: 70%;       /* เปอร์เซ็นต์ตามต้องการ */
+  background-color: orange;
+  border-radius: 7px;
+}
+
+.jvs-percent-below {
+  position: absolute;
+  top: 190%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.cssPG {
+  position: absolute;
+  top: 225%;                /* จุดอ้างอิงกลาง */
+  left: 12%;
+  transform: translate(-50%, -50%);  /* ย้ายให้อยู่ตรงกลางจริง */
+  width: 8%;              /* หรือจะใช้ max-width: 600px ก็ได้ */
+  height: auto;
+}
+
+.css-title {
+  position: absolute;
+  top: 235%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.css-progress-container {
+  position: absolute;
+  top: 239%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.css-progress-bar {
+  height: 100%;
+  width: 65%;       /* ✅ CSS: 70% */
+  background-color: orange;
+  border-radius: 7px;
+}
+
+.css-percent-below {
+  position: absolute;
+  top: 243%;       /* ใต้ progress bar */
+  left: 12%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.RubyPG {
+  position: absolute;
+  top: 225%;                /* จุดอ้างอิงกลาง */
+  left: 37%;
+  transform: translate(-50%, -50%);  /* ย้ายให้อยู่ตรงกลางจริง */
+  width: 8%;              /* หรือจะใช้ max-width: 600px ก็ได้ */
+  height: auto;
+}
+
+
+.Ruby-title {
+  position: absolute;
+  top: 235%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.Ruby-progress-container {
+  position: absolute;
+  top: 239%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.Ruby-progress-bar {
+  height: 100%;
+  width: 60%;       /* ✅ CSS: 70% */
+  background-color: rgb(2, 1, 0);
+  border-radius: 7px;
+}
+
+.Ruby-percent-below {
+  position: absolute;
+  top: 243%;       /* ใต้ progress bar */
+  left: 63%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+.phpPG {
+  position: absolute;
+  top: 225%;                /* จุดอ้างอิงกลาง */
+  left: 63%;
+  transform: translate(-50%, -50%);  /* ย้ายให้อยู่ตรงกลางจริง */
+  width: 8%;              /* หรือจะใช้ max-width: 600px ก็ได้ */
+  height: auto;
+}
+
+.php-title {
+  position: absolute;
+  top: 235%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.php-progress-container {
+  position: absolute;
+  top: 239%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.php-progress-bar {
+  height: 100%;
+  width: 50%;       /* ✅ CSS: 70% */
+  background-color: orange;
+  border-radius: 7px;
+}
+
+.php-percent-below {
+  position: absolute;
+  top: 243%;       /* ใต้ progress bar */
+  left: 37%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sqlPG {
+  position: absolute;
+  top: 225%;                /* จุดอ้างอิงกลาง */
+  left: 89%;
+  transform: translate(-50%, -50%);  /* ย้ายให้อยู่ตรงกลางจริง */
+  width: 8%;              /* หรือจะใช้ max-width: 600px ก็ได้ */
+  height: auto;
+}
+
+.sql-title {
+  position: absolute;
+  top: 235%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.sql-progress-container {
+  position: absolute;
+  top: 239%;
+  left: 89%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.sql-progress-bar {
+  height: 100%;
+  width: 50%;       /* ✅ CSS: 70% */
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+
+.sql-percent-below {
+  position: absolute;
+  top: 243%;       /* ใต้ progress bar */
+  left: 89%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.WORK {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  padding: 80px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to right,
+    #ff9800 0%, 
+    #ff9800 33%,
+    #000000 33%, 
+    #000000 66%, 
+    #000000 66%, 
+    #000000 75%, 
+    #000000 75%, 
+    #000000 100%
+  );
+}
+
+.WORKs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  padding: 80px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to right, #000 66%, #ff9800 33%);
+}
+
+
+.API-logo {
+  position: absolute;
+  top: 2450px;      /* ปรับค่าได้ตามต้องการ */
+  left: 25px;
+  width: auto;
+  height: auto;
+  border: 5px solid #ffffff;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.PTT-logo {
+  position: absolute;
+  top: 2940px;      /* ปรับค่าได้ตามต้องการ */
+  left: 1295px;
+  width: auto;
+  height: auto;
+  border: 5px solid #ffffff;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.word-text {
+  position: absolute;
+  top: 2829px;
+  right: 1250px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 100px;
+  text-align: right;
+  z-index: 10;
+  font-weight: 750;
+  background: linear-gradient(to bottom, #ffffff 50%, #ff6600 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.word-textt {
+  position: absolute;
+  top: 2829px;
+  right: 645px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 100px;
+  text-align: right;
+  z-index: 10;
+  font-weight: 750;
+  background: linear-gradient(to bottom, #ff9800 50%, #ff6600 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.word-texttt {
+  position: absolute;
+  top: 2829px;
+  right: 440px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 100px;
+  text-align: right;
+  z-index: 10;
+  font-weight: 750;
+  background: linear-gradient(to bottom, #ff6600 50%, #ffffff 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Name-api {
+position: absolute;
+  top: 2450px;    /* ขยับจากบนลงมา */
+  right: 770px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
+  text-align: right;
+  font-weight: 800; /* ทำให้หนา */
+  color: #ff6600; /* ตัวอย่างสีฟ้า */
+}
+
+.Name-apii {
+position: absolute;
+  top: 2750px;    /* ขยับจากบนลงมา */
+  right: 50px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: right;
+  font-weight: 700; /* ทำให้หนา */
+  color: #ff9800; /* ตัวอย่างสีฟ้า */
+}
+
+.Name-apiii {
+position: absolute;
+  top: 2540px;    /* ขยับจากบนลงมา */
+  right: 50px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  text-align: right;
+  font-weight: 700; /* ทำให้หนา */
+  color: #ffffff; /* ตัวอย่างสีฟ้า */
+}
+
+.Name-apiiii {
+position: absolute;
+  top: 2570px;    /* ขยับจากบนลงมา */
+  right: 105px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  text-align: right;
+  font-weight: 700; /* ทำให้หนา */
+  color: #ffffff; /* ตัวอย่างสีฟ้า */
+}
+
+.Name-PT {
+position: absolute;
+  top: 2970px;    /* ขยับจากบนลงมา */
+  right: 680px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
+  text-align: right;
+  font-weight: 800; /* ทำให้หนา */
+  color: #ff6600; /* ตัวอย่างสีฟ้า */
+}
+.Name-PTT {
+position: absolute;
+  top: 3060px;    /* ขยับจากบนลงมา */
+  right: 690px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  text-align: right;
+  font-weight: 700; /* ทำให้หนา */
+  color: #ffffff; /* ตัวอย่างสีฟ้า */
+}
+
+.Name-PTTT {
+position: absolute;
+  top: 3089px;    /* ขยับจากบนลงมา */
+  right: 840px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  text-align: right;
+  font-weight: 700; /* ทำให้หนา */
+  color: #ffffff; /* ตัวอย่างสีฟ้า */
+}
+
+.Name-PTTTT {
+position: absolute;
+  top: 3120px;    /* ขยับจากบนลงมา */
+  right: 740px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  text-align: right;
+  font-weight: 700; /* ทำให้หนา */
+  color: #ffffff; /* ตัวอย่างสีฟ้า */
+}
+
+.Name-PTTTTT {
+position: absolute;
+  top: 3150px;    /* ขยับจากบนลงมา */
+  right: 1535px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  text-align: right;
+  font-weight: 700; /* ทำให้หนา */
+  color: #ffffff; /* ตัวอย่างสีฟ้า */
+}
+
+
+.Name-PTTTTTT {
+position: absolute;
+  top: 3300px;    /* ขยับจากบนลงมา */
+  right: 1300px;  /* ขยับจากขอบขวา */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: right;
+  font-weight: 700; /* ทำให้หนา */
+  color: #ff9800; /* ตัวอย่างสีฟ้า */
+}
+
+.tx {
+  position: absolute;
+  top: 650px;
+  right: 700px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0px;
+  text-align: right;
+
+}
+

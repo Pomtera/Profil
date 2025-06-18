@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+  background: linear-gradient(to bottom, #000000 50%, #ff6f00 50%);
+  min-height: 100vh;
+}
+
+
+.bg-gradient {
+ background: linear-gradient(to bottom, #000000 50%, #ff6f00 50%);
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #1e1e1e;
+  color: #ff0000;
+  border-radius: 1rem;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+}
+
+.card img {
+  filter: drop-shadow(0 0 5px #ff8000);
+}
+
+h3, p {
+  color: #ffffff;
+}
+
+.form-control {
+  background-color: #333;
+  border: 1px solid #ff8000;
+  color: #160202;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+.form-control:focus {
+  border-color: #fff;
+  box-shadow: 0 0 5px #fff;
+  background-color: #333;
+}
+
+.btn-success {
+  background-color: #ff8000 !important;
+  border: none;
+  color: #000000;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+hr {
+  border-color: #ff9900;
+}
+
+.text-muted {
+  color: #000000 !important;
+}
+
+.text-center a {
+  color: #ffcc80;
+  text-decoration: none;
+}
+
+.text-center a:hover {
+  color: #fff;
+}
+
+.login-card {
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+  border: 2px solid #ff6f00;
+  box-shadow:
+  0 5px 1px rgba(255, 128, 0, 1),  
+  0 8px 25px rgba(0, 0, 0, 1);       
+
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  color: #ffffff;
+}
+
+
+.login-card .form-control {
+  background-color: #2c2c2c !important;
+  border: 1px solid #ff8800 !important;
+  color: #ffffff !important;
+}
+
+.login-card .form-control::placeholder {
+  color: #fafafa !important;
+}
