@@ -62,7 +62,7 @@ function Contact() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto align-items-center gap-4 nav-menu-right">
               <li className="nav-item"><a className="nav-link text-white fw-medium" href="Profile">PROFILE</a></li>
-              <li className="nav-item"><a className="nav-link text-white fw-medium" href="#D">PROJECT</a></li>
+              <li className="nav-item"><a className="nav-link text-white fw-medium" href="HOME">PROJECT</a></li>
               <li className="nav-item"><a className="nav-link text-danger fw-medium" href="/">LOGOUT</a></li>
               <li className="nav-item"><a className="btn btn-outline-warning fw-bold px-3 py-2" href="/Resume.pdf" download>Download PDF</a></li>
             </ul>
